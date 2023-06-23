@@ -1,35 +1,15 @@
-site_name: MedPerf
+site_name: Tutorial for RANO
 site_url: https://medperf.com/
-repo_url: https://github.com/mlcommons/medperf
-repo_name: mlcommons/medperf
+repo_url: https://github.com/writechoiceorg/rano-tutorial
+repo_name: writechoiceorg/rano-tutorial
 nav:
-- Introduction: index.md
-- Benchmark Roles: roles.md
-- Benchmark Workflow: workflow.md
-- MedPerf Components: medperf_components.md
-- Getting Started:
-  - Overview: getting_started/overview.md
-  - Installation: getting_started/installation.md
-  - Setup: getting_started/setup.md
-  - Hands-on Tutorial for Bechmark Committee: getting_started/benchmark_owner_demo.md
-  - Hands-on Tutorial for Model Owners: getting_started/model_owner_demo.md
-  - Hands-on Tutorial for Data Owners: getting_started/data_owner_demo.md
-  - MedPerf MLCubes: 
-    - Introduction: mlcubes/mlcubes.md
-    - Creating Data Preparator MLCubes from Scratch: mlcubes/mlcube_data.md
-    - Creating Model MLCubes from Scratch: mlcubes/mlcube_models.md
-    - Creating Metrics MLCubes from Scratch: mlcubes/mlcube_metrics.md
-    - Creating Model MLCubes from GaNDLF: mlcubes/gandlf_mlcube.md
+- Overview: overview.md
+- Clinical Problem Definition: clinical_problem_definition.md
+- Setup: setup.md
+- Data Curation: data_curation.md
+- Account Creation: account_creation.md
+- Data Preparation: data_preparation.md
 
-- Concepts:
-  - MedPerf Account: concepts/accounts.md
-  - Client Configuration: concepts/profiles.md
-  - MLCube Components: concepts/mlcube_files.md
-  - Hosting Files: concepts/hosting_files.md
-  - Benchmark Associations: concepts/associations.md
-  - Model Priority: concepts/priorities.md
-  - Running Specific Models: concepts/single_run.md
-- CLI Reference: cli_reference.md
 # - Code Reference: reference/
 theme: 
   features:
@@ -71,16 +51,6 @@ theme:
 plugins:
   - search
   - macros
-  - mkdocstrings:
-      watch:
-        - cli/medperf
-        # - server
-      handlers:
-        python:
-          paths: [cli/medperf]
-  - gen-files:
-      scripts:
-        - docs/gen_ref_pages.py
   - literate-nav:
       nav_file: SUMMARY.md
       

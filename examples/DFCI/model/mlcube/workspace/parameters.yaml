@@ -1,8 +1,0 @@
-crop_margin: 20
-crop_prob: 0.5
-crop_sample_batch: 1
-low_range: -100
-high_range: 240
-slice_thickness: 3
-max_rounds: 10
-fine_threshold: 0.5

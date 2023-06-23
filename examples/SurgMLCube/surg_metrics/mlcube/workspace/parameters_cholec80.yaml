@@ -1,8 +1,0 @@
-metrics:
-  # List of metrics to run
-  - f1-score
-  - accuracy
-  - jaccard
-  - recall
-  - precision
-num_classes: 7
